@@ -4,6 +4,28 @@
   width: 650px;
 }
 
-#greeting-container {
+#fact-container {
   margin-top: 20px;
 }
+
+@keyframes color {
+    0%   { background: #33CCCC; }
+    20%  { background: #90a2f1; }
+    40%  { background: #6da0e4; }
+    60%  { background: #eec82e; }
+    80%  { background: #ffbb01; }
+    100% { background: #e69c2e; }
+  }
+  
+  body {
+    background: #33CCCC; /* Fallback */
+    animation: color 9s infinite linear;
+    text-align: center;
+    padding: 2em;
+  }
+  h1 {
+    text-align: center;
+    font-family: 'Kavoon', sans-serif;
+    font-size: 2.5em;
+    color: white;
+  }
